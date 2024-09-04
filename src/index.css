@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  border-radius: 5px;
+  background: #edededb9;
+  padding: 1rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 1;
+}
+
+.container.opacity {
+  opacity: 0;
+}
+
+.container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .top .line {
+  height: 1px;
+  width: 100%;
+  background: #bdbdbdb9;
+}
+
+.container .top .step {
+  min-width: 20px;
+  height: 20px;
+  font-size: 10px;
+  border-radius: 50%;
+  background: #bdbdbdb9;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .top .step.active {
+  background: #8837e9;
+  color: #ffffff;
+}
+
+/* MIDDLE */
+.container .middle {
+  /* margin: auto; */
+  align-self: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.container .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .bottom button {
+  padding: 6px 17px;
+  border-radius: 15px;
+  background: #8837e9;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel {
+  font-size: 18px;
+  background: none;
+  margin-left: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
